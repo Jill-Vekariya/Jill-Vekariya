@@ -2,7 +2,7 @@
 
 ### AI and machine learning engineering portfolio
 
-Projects exploring reliable agents, evidence retrieval, recommendation systems, and streaming risk decisions. Each repository links working demonstrations, implementation details, reproducible checks, and the limits of its results.
+Projects exploring reliable agents, evidence retrieval, recommendation systems, streaming risk decisions, and incident diagnosis. Explore implementation details, reproducible checks, and the limits of each result.
 
 [Email](mailto:jillvekariya.10@gmail.com) · [Repositories](https://github.com/Jill-Vekariya?tab=repositories)
 
@@ -14,6 +14,7 @@ Projects exploring reliable agents, evidence retrieval, recommendation systems, 
 | **[Atlas](https://github.com/Jill-Vekariya/atlas-recsys)** | Cold-start recommendation with PyTorch retrieval, FAISS, LightGBM ranking, temporal evaluation, and model rollout/rollback | [Demo](https://jill-vekariya.github.io/atlas-recsys/) · [Results](https://github.com/Jill-Vekariya/atlas-recsys/blob/main/docs/RESULTS.md) |
 | **[ReleaseLens](https://github.com/Jill-Vekariya/ReleaseLens)** | Release-scoped retrieval, exact citations, immutable documentation revisions, and review of saved answers after source changes | [Demo](https://jill-vekariya.github.io/ReleaseLens/) · [Measured retrieval study](https://github.com/Jill-Vekariya/ReleaseLens/blob/main/docs/V3_REPORT.md) |
 | **[Sentinel](https://github.com/Jill-Vekariya/sentinel-fraud-platform)** | Fraud scoring with XGBoost, account-keyed streaming, durable decisions, monitoring, and guarded model promotion | [Demo](https://jill-vekariya.github.io/sentinel-fraud-platform/) · [Validation](https://github.com/Jill-Vekariya/sentinel-fraud-platform/blob/main/docs/VALIDATION.md) |
+| **[SafeHeal AI](https://github.com/Jill-Vekariya/safeheal-ai)** | Synthetic three-service lab with Kubernetes fault benchmarks, deterministic incident detection, and bounded evidence-grounded diagnosis; autonomous recovery remains future work | [Setup](https://github.com/Jill-Vekariya/safeheal-ai/blob/main/README.md#run-on-windows) · [Diagnosis limits](https://github.com/Jill-Vekariya/safeheal-ai/blob/main/docs/AI_DIAGNOSIS.md) |
 
 ## Three engineering discussions
 
@@ -27,6 +28,12 @@ Projects exploring reliable agents, evidence retrieval, recommendation systems, 
 
 ## About the evidence
 
-These are AI-assisted portfolio projects. Each project's ownership notes separate implementation assistance from completed personal contributions. Synthetic demonstrations, measured offline experiments, and production outcomes have different scopes; the repositories preserve those distinctions and document unsuccessful results.
+These are AI-assisted portfolio projects. Available project ownership notes distinguish AI assistance, proposed exercises, and personal contributions supported by actual evidence; an exercise is not a completed contribution. Synthetic demonstrations, measured offline experiments, and production outcomes have different scopes; the repositories preserve those distinctions and document unsuccessful results.
 
-The browser demos are immediately accessible. Full Python services, databases, brokers and SQL workers run separately using the setup instructions in each repository.
+The four linked browser demos are immediately accessible. SafeHeal AI currently runs locally using its documented setup and has no hosted public demo. Full Python services, databases, brokers and SQL workers run separately using the setup instructions in each repository.
+
+## Review and reproduction
+
+Project READMEs document status, setup and limitations. Agent Reliability Harness, Atlas, ReleaseLens and Sentinel also link interview practice. Recorded experiments retain their original workload and revision; use current CI and a fresh local run to assess newer source. No independent authorship, production scale or business outcome is implied by the portfolio.
+
+Local documentation links can be checked with `python scripts/check_links.py`; add `--online` for external reachability.
