@@ -27,6 +27,12 @@ Projects exploring reliable agents, evidence retrieval, recommendation systems, 
 
 ## About the evidence
 
-These are AI-assisted portfolio projects. Each project's ownership notes separate implementation assistance from completed personal contributions. Synthetic demonstrations, measured offline experiments, and production outcomes have different scopes; the repositories preserve those distinctions and document unsuccessful results.
+These are AI-assisted portfolio projects. Project ownership notes distinguish AI assistance, proposed exercises, and personal contributions supported by actual evidence; an exercise is not a completed contribution. Synthetic demonstrations, measured offline experiments, and production outcomes have different scopes; the repositories preserve those distinctions and document unsuccessful results.
 
 The browser demos are immediately accessible. Full Python services, databases, brokers and SQL workers run separately using the setup instructions in each repository.
+
+## Review and reproduction
+
+Each project README links its current status, setup, limitations and interview practice. Recorded experiments retain their original workload and revision; use current CI and a fresh local run to assess newer source. No independent authorship, production scale or business outcome is implied by the portfolio.
+
+Local documentation links can be checked with `python scripts/check_links.py`; add `--online` for external reachability.
