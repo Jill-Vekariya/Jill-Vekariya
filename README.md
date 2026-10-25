@@ -2,7 +2,7 @@
 
 ### AI and machine learning engineering portfolio
 
-Projects exploring reliable agents, evidence retrieval, recommendation systems, and streaming risk decisions. Each repository links working demonstrations, implementation details, reproducible checks, and the limits of its results.
+Projects exploring reliable agents, evidence retrieval, recommendation systems, streaming risk decisions, and Kubernetes recovery. Each repository links working demonstrations, implementation details, reproducible checks, and the limits of its results.
 
 [Email](mailto:jillvekariya.10@gmail.com) · [Repositories](https://github.com/Jill-Vekariya?tab=repositories)
 
@@ -13,6 +13,7 @@ Projects exploring reliable agents, evidence retrieval, recommendation systems, 
 | **[Agent Reliability Harness](https://github.com/Jill-Vekariya/agent-reliability-harness)** | Protected SQL execution, typed result grading, strict replay, concurrent budget reservations, and failure diagnostics | [Demo](https://jill-vekariya.github.io/agent-reliability-harness/) · [Code review route](https://github.com/Jill-Vekariya/agent-reliability-harness/blob/main/docs/REVIEW_GUIDE.md) |
 | **[Atlas](https://github.com/Jill-Vekariya/atlas-recsys)** | Cold-start recommendation with PyTorch retrieval, FAISS, LightGBM ranking, temporal evaluation, and model rollout/rollback | [Demo](https://jill-vekariya.github.io/atlas-recsys/) · [Results](https://github.com/Jill-Vekariya/atlas-recsys/blob/main/docs/RESULTS.md) |
 | **[ReleaseLens](https://github.com/Jill-Vekariya/ReleaseLens)** | Release-scoped retrieval, exact citations, immutable documentation revisions, and review of saved answers after source changes | [Demo](https://jill-vekariya.github.io/ReleaseLens/) · [Measured retrieval study](https://github.com/Jill-Vekariya/ReleaseLens/blob/main/docs/V3_REPORT.md) |
+| **[SafeHeal AI](https://github.com/Jill-Vekariya/safeheal-ai)** | Kubernetes incident diagnosis, bounded AI evidence, independent allowlisted recovery, least-privilege access, and reproducible fault experiments | [Demo guide](https://github.com/Jill-Vekariya/safeheal-ai/blob/main/docs/DEMO.md) · [Research report](https://github.com/Jill-Vekariya/safeheal-ai/blob/main/docs/RESEARCH_REPORT.md) |
 | **[Sentinel](https://github.com/Jill-Vekariya/sentinel-fraud-platform)** | Fraud scoring with XGBoost, account-keyed streaming, durable decisions, monitoring, and guarded model promotion | [Demo](https://jill-vekariya.github.io/sentinel-fraud-platform/) · [Validation](https://github.com/Jill-Vekariya/sentinel-fraud-platform/blob/main/docs/VALIDATION.md) |
 
 ## Three engineering discussions
@@ -23,10 +24,12 @@ Projects exploring reliable agents, evidence retrieval, recommendation systems, 
 
 ## Technologies used in these repositories
 
-**Python and SQL** · **PyTorch, FAISS, LightGBM and XGBoost** · **FastAPI and Pydantic** · **SQLite and PostgreSQL** · **Kafka-compatible streaming** · **Docker, pytest and GitHub Actions**
+**Python and SQL** · **PyTorch, FAISS, LightGBM and XGBoost** · **FastAPI and Pydantic** · **SQLite and PostgreSQL** · **Kafka-compatible streaming** · **Docker, Kubernetes, Prometheus, pytest and GitHub Actions**
 
 ## About the evidence
 
 These are AI-assisted portfolio projects. Each project's ownership notes separate implementation assistance from completed personal contributions. Synthetic demonstrations, measured offline experiments, and production outcomes have different scopes; the repositories preserve those distinctions and document unsuccessful results.
 
 The browser demos are immediately accessible. Full Python services, databases, brokers and SQL workers run separately using the setup instructions in each repository.
+
+SafeHeal AI's end-to-end demo runs through GitHub Actions or an isolated local Docker-kind lab; its demo guide explains both paths.
