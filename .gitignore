@@ -1,0 +1,7 @@
+
+# Local credentials and workstation caches
+.env.*
+!.env.example
+!.env.sample
+.DS_Store
+Thumbs.db

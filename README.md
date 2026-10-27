@@ -1,35 +1,36 @@
 # Jill-Vekariya
 
-### AI and machine learning engineering portfolio
+## AI, machine learning and backend engineering portfolio
 
-Projects exploring reliable agents, evidence retrieval, recommendation systems, streaming risk decisions, and Kubernetes recovery. Each repository links working demonstrations, implementation details, reproducible checks, and the limits of its results.
+Five projects exploring bounded agent execution, Kubernetes recovery, source-grounded answers, recommendation systems and transactional risk decisions. Each links implementation, reproducible checks and the limits of its evidence.
 
-[Email](mailto:jillvekariya.10@gmail.com) · [Repositories](https://github.com/Jill-Vekariya?tab=repositories)
+[Repositories](https://github.com/Jill-Vekariya?tab=repositories)
 
 ## Selected projects
 
-| Project | Engineering focus | Explore |
-|---|---|---|
-| **[Agent Reliability Harness](https://github.com/Jill-Vekariya/agent-reliability-harness)** | Protected SQL execution, typed result grading, strict replay, concurrent budget reservations, and failure diagnostics | [Demo](https://jill-vekariya.github.io/agent-reliability-harness/) · [Code review route](https://github.com/Jill-Vekariya/agent-reliability-harness/blob/main/docs/REVIEW_GUIDE.md) |
-| **[Atlas](https://github.com/Jill-Vekariya/atlas-recsys)** | Cold-start recommendation with PyTorch retrieval, FAISS, LightGBM ranking, temporal evaluation, and model rollout/rollback | [Demo](https://jill-vekariya.github.io/atlas-recsys/) · [Results](https://github.com/Jill-Vekariya/atlas-recsys/blob/main/docs/RESULTS.md) |
-| **[ReleaseLens](https://github.com/Jill-Vekariya/ReleaseLens)** | Release-scoped retrieval, exact citations, immutable documentation revisions, and review of saved answers after source changes | [Demo](https://jill-vekariya.github.io/ReleaseLens/) · [Measured retrieval study](https://github.com/Jill-Vekariya/ReleaseLens/blob/main/docs/V3_REPORT.md) |
-| **[SafeHeal AI](https://github.com/Jill-Vekariya/safeheal-ai)** | Kubernetes incident diagnosis, bounded AI evidence, independent allowlisted recovery, least-privilege access, and reproducible fault experiments | [Demo guide](https://github.com/Jill-Vekariya/safeheal-ai/blob/main/docs/DEMO.md) · [Research report](https://github.com/Jill-Vekariya/safeheal-ai/blob/main/docs/RESEARCH_REPORT.md) |
-| **[Sentinel](https://github.com/Jill-Vekariya/sentinel-fraud-platform)** | Fraud scoring with XGBoost, account-keyed streaming, durable decisions, monitoring, and guarded model promotion | [Demo](https://jill-vekariya.github.io/sentinel-fraud-platform/) · [Validation](https://github.com/Jill-Vekariya/sentinel-fraud-platform/blob/main/docs/VALIDATION.md) |
+| Project | Engineering discussion | Explore |
+| --- | --- | --- |
+| **[Agent Reliability Harness](https://github.com/Jill-Vekariya/agent-reliability-harness)** | Read-only SQL execution, typed grading, strict replay and conservative spending reservations | [Saved-trace demo](https://jill-vekariya.github.io/agent-reliability-harness/) · [Code review](https://github.com/Jill-Vekariya/agent-reliability-harness/blob/main/docs/REVIEW_GUIDE.md) |
+| **[SafeHeal AI](https://github.com/Jill-Vekariya/safeheal-ai)** | Evidence-backed diagnosis separated from independent allowlisted recovery; failed model trials remain visible | [Demo guide](https://github.com/Jill-Vekariya/safeheal-ai/blob/main/docs/DEMO.md) · [Research report](https://github.com/Jill-Vekariya/safeheal-ai/blob/main/docs/RESEARCH_REPORT.md) |
+| **[ReleaseLens](https://github.com/Jill-Vekariya/ReleaseLens)** | Exact release/ACL scope, immutable citations and review after source changes | [Browser demo](https://jill-vekariya.github.io/ReleaseLens/) · [Challenge and limits](https://github.com/Jill-Vekariya/ReleaseLens/blob/main/docs/CHALLENGE_V1.md) |
+| **[Atlas](https://github.com/Jill-Vekariya/atlas-recsys)** | Temporal recommendation evaluation, compatible model/index bundles and rollout/rollback | [Browser lab](https://jill-vekariya.github.io/atlas-recsys/) · [Model-selection case study](https://github.com/Jill-Vekariya/atlas-recsys/blob/main/docs/MODEL_SELECTION_CASE_STUDY.md) |
+| **[Sentinel](https://github.com/Jill-Vekariya/sentinel-fraud-platform)** | Atomic history/decision/outbox state, event replay, scoring and model rollback | [Browser demo](https://jill-vekariya.github.io/sentinel-fraud-platform/) · [Validation](https://github.com/Jill-Vekariya/sentinel-fraud-platform/blob/main/docs/VALIDATION.md) |
 
-## Three engineering discussions
+## Questions the code can answer
 
-- **When should a system fail closed?** [Agent Reliability Harness](https://github.com/Jill-Vekariya/agent-reliability-harness/blob/main/docs/DECISIONS.md) separates a correct answer from a safe decision and treats unknown provider charges conservatively.
-- **What if the selected model loses to a simple baseline?** [Atlas's model-selection case study](https://github.com/Jill-Vekariya/atlas-recsys/blob/main/docs/MODEL_SELECTION_CASE_STUDY.md) retains a failed generalization result and explains validation-only selection.
-- **Does a valid citation mean an answer is sufficient?** [ReleaseLens's migration challenge](https://github.com/Jill-Vekariya/ReleaseLens/blob/main/docs/CHALLENGE_V1.md) distinguishes exact source membership from relevant and sufficient evidence.
+- What happens when an SQL tool hangs, a saved trace becomes incompatible or provider usage is unknown? Start with [Harness decisions](https://github.com/Jill-Vekariya/agent-reliability-harness/blob/main/docs/DECISIONS.md).
+- Why did a fixed rule outperform AI in a narrow recovery study? Inspect [SafeHeal's CPU-study outcomes](https://github.com/Jill-Vekariya/safeheal-ai/blob/main/evidence/public-release/CPU_STUDY.md).
+- Why can a valid citation still fail to answer a question? Read [ReleaseLens's migration challenge](https://github.com/Jill-Vekariya/ReleaseLens/blob/main/docs/CHALLENGE_V1.md).
+- What should happen when a validation-selected model loses to popularity, or a transaction is retried after model promotion? Inspect Atlas's selection evidence and Sentinel's transaction tests.
 
-## Technologies used in these repositories
+## Technologies used meaningfully
 
-**Python and SQL** · **PyTorch, FAISS, LightGBM and XGBoost** · **FastAPI and Pydantic** · **SQLite and PostgreSQL** · **Kafka-compatible streaming** · **Docker, Kubernetes, Prometheus, pytest and GitHub Actions**
+Python and SQL · FastAPI and Pydantic · SQLite and PostgreSQL · PyTorch, FAISS and LightGBM · XGBoost and Isolation Forest · Kafka-compatible streaming · Docker and Kubernetes · pytest, Prometheus and GitHub Actions.
 
-## About the evidence
+## Evidence and ownership
 
-These are AI-assisted portfolio projects. Each project's ownership notes separate implementation assistance from completed personal contributions. Synthetic demonstrations, measured offline experiments, and production outcomes have different scopes; the repositories preserve those distinctions and document unsuccessful results.
+These are AI-assisted portfolio projects. Ownership records distinguish AI implementation/preparation from personally confirmed coding, review and reproduction. Planned exercises are not completed contributions; a prepared explanation is not proof of independent understanding.
 
-The browser demos are immediately accessible. Full Python services, databases, brokers and SQL workers run separately using the setup instructions in each repository.
+Browser demonstrations are separate from Python services, SQL workers, databases and brokers. SafeHeal's live recovery demonstration uses an isolated Docker-kind lab or its documented workflow. Recorded offline/synthetic studies are not production scale, customer impact or guaranteed interview/AI-shortlisting outcomes. READMEs provide the setup, evidence and unresolved limits for each project.
 
-SafeHeal AI's end-to-end demo runs through GitHub Actions or an isolated local Docker-kind lab; its demo guide explains both paths.
+**Contact:** [owner-confirmed email or professional profile]
