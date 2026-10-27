@@ -33,4 +33,4 @@ These are AI-assisted portfolio projects. Ownership records distinguish AI imple
 
 Browser demonstrations are separate from Python services, SQL workers, databases and brokers. SafeHeal's live recovery demonstration uses an isolated Docker-kind lab or its documented workflow. Recorded offline/synthetic studies are not production scale, customer impact or guaranteed interview/AI-shortlisting outcomes. READMEs provide the setup, evidence and unresolved limits for each project.
 
-**Contact:** [owner-confirmed email or professional profile]
+**Contact:** [jillvekariya.10@gmail.com](mailto:jillvekariya.10@gmail.com)
