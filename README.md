@@ -30,6 +30,9 @@ execution, with working browser demonstrations and source-linked experiments.
 
 ## Evidence and contribution
 
+[Engineering review](docs/ENGINEERING_REVIEW_20261104.md): reproduced failures,
+code fixes, dependency audits and verification across the five projects.
+
 Each repository links its setup, recorded results and technical limitations.
 The browser demos are distinct from the Python services, databases and recovery
 labs. These are portfolio experiments; no production customer impact is claimed.
