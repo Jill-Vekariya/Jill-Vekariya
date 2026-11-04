@@ -67,6 +67,19 @@ verification. Check the exact pull-request head and CI result for those checks.
 Dependency scans cover the audited Python/JavaScript sets, not container operating
 system packages or a penetration test.
 
+Follow-up verification on 5 November 2026: all five project pull requests were
+merged after their applicable checks passed. The final [SafeHeal Kubernetes
+run](https://github.com/Jill-Vekariya/safeheal-ai/actions/runs/41883711959) completed
+12 native/rule fault trials with no technical failures and successful cleanup for
+every attempted trial. Six unconfigured AI slots remain recorded as not run;
+there were no provider calls. This bounded experiment does not establish AI
+recovery effectiveness.
+
+GitHub secret scanning and push protection are enabled on all six public
+repositories. Dependency alerts and Dependabot security-update pull requests are
+also enabled on these repositories. Review and test the generated update
+proposals before merging them.
+
 The temporal study remains synthetic. ReleaseLens packets still have zero
 independent human sufficiency reviews. Existing historical reports, failed
 experiments, licenses and AI-assistance/contribution records remain preserved.
