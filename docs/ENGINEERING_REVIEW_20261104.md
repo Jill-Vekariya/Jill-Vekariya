@@ -9,11 +9,11 @@ The pull requests below provide the reviewed code and live CI results.
 | Atlas | JSON-safe request errors; non-ASCII credential handling; validation sealed before multi-seed test evaluation; patched dependency locks | 56 Python tests and 5 browser-engine tests passed; three synthetic seeds completed | [PR #6](https://github.com/Jill-Vekariya/atlas-recsys/pull/6) |
 | Agent Reliability Harness | JSON-safe workflow validation; isolated dependency audit in CI | 203 tests passed; 35 database-dependent tests skipped locally; `make ci`, mypy, lint and fixed regression checks passed | [PR #30](https://github.com/Jill-Vekariya/agent-reliability-harness/pull/30) |
 | ReleaseLens | JSON-safe request errors; evidence-sufficiency packets bound to authorized extracts and review identity attestations | 185 Python tests and 16 browser-engine tests passed; 2 PostgreSQL cases skipped locally; six-case packet exercise completed | [PR #7](https://github.com/Jill-Vekariya/ReleaseLens/pull/7) |
-| SafeHeal AI | JSON-safe service errors; predeclared multi-fault comparison using the existing independent recovery authority | 578 Python tests and 9 browser-engine tests passed; 1 opt-in provider test skipped | [PR #10](https://github.com/Jill-Vekariya/safeheal-ai/pull/10) |
+| SafeHeal AI | JSON-safe service errors; per-trial Pod rebinding with fixed Deployment identity; predeclared multi-fault comparison | 581 Python tests and 9 browser-engine tests passed; 1 opt-in provider test skipped | [PR #10](https://github.com/Jill-Vekariya/safeheal-ai/pull/10) |
 | Sentinel | Retain a failed input before polling a later offset; require a delivery callback; retain uncertain outbox attempts; patched dependency locks | Clean hash-locked install: 33 Python tests passed; hosted-demo and live loopback dashboard integration checks passed | [PR #3](https://github.com/Jill-Vekariya/sentinel-fraud-platform/pull/3) |
 | Profile | Run local documentation checks on main pushes as well as pull requests; expose this review | Markdown targets checked locally | This repository |
 
-**Totals:** 1,055 Python tests passed and 38 were skipped. The skipped tests are
+**Totals:** 1,058 Python tests passed and 38 were skipped. The skipped tests are
 not counted as passes. Thirty browser-engine tests passed across Atlas,
 ReleaseLens and SafeHeal. Sentinel's two integration drivers exercised hosted
 inference, scoring, feedback and the live local dashboard; they do not establish
@@ -31,6 +31,12 @@ A later successful offset commit would acknowledge the earlier failed input too.
 The worker now retains that input until processing and commit succeed. An empty
 producer queue is also insufficient evidence of delivery: a successful callback
 is required. Regression tests cover both cases and failed before the fixes.
+
+SafeHeal's live multi-fault check exposed reuse of a payment-Pod binding after a
+scale-zero trial recreated that Pod. Each attempted trial now binds a fresh backend
+while retaining the original Deployment UID/template guard. Three lifecycle
+regressions cover legitimate Pod replacement, parent UID/template drift and unique
+execution paths across runs. The failed CI run remains linked in the project notes.
 
 ## Dependency and CI changes
 
