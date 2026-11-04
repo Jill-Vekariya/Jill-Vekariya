@@ -1,5 +1,6 @@
 
 # Local credentials and workstation caches
+.env
 .env.*
 !.env.example
 !.env.sample
