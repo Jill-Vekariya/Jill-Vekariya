@@ -1,9 +1,8 @@
 # Hi, I'm Jill Vekariya
 
-Third-year computer science student from Gujarat, India, working on machine learning and the backend systems that serve it. I'm looking for an **ML/AI internship** (summer 2027 or earlier).
+Third-year engineering student from Gujarat, India, working on machine learning and the backend systems that serve it. I'm looking for an **ML/AI internship** (summer 2027 or earlier).
 
-<!-- TODO: replace the placeholders below with your real details -->
-📍 Gujarat, India · 🎓 B.Tech CSE, [Your College], batch of 2028 · ✉️ [jillvekariya.10@gmail.com](mailto:jillvekariya.10@gmail.com) · [LinkedIn](https://www.linkedin.com/in/YOUR-HANDLE)
+📍 Rajkot, Gujarat, India · ✉️ [jillvekariya.10@gmail.com](mailto:jillvekariya.10@gmail.com) · 🌐 [Portfolio](https://jill-vekariya.github.io/)
 
 ## Projects
 
@@ -24,8 +23,6 @@ Smaller and ongoing: [python_lab](https://github.com/Jill-Vekariya/python_lab) (
 ## How I build
 
 I use AI coding assistants heavily, and I say so in each repo. My job is the part the assistant can't do: choosing the problem, deciding what counts as evidence, reproducing results, and debugging what breaks. Every project above has CI, locked dependencies and recorded experiments, including the ones that didn't go my way. Each repo's `docs/` folder records what was AI-assisted and what I verified myself.
-
-<!-- TODO: once you've written your own regression test / fix in each repo, link the commits here under "Independent contributions". -->
 
 ## Currently
 
