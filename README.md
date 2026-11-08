@@ -67,15 +67,6 @@ Also: **[python_lab](https://github.com/Jill-Vekariya/python_lab)**, a growing s
 
 </div>
 
-## GitHub Activity
-
-<div align="center">
-
-![Jill's GitHub stats](https://github-readme-stats.vercel.app/api?username=Jill-Vekariya&show_icons=true&hide_border=true&theme=default&hide=issues)
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Jill-Vekariya&layout=compact&hide_border=true&langs_count=6)
-
-</div>
-
 ## Contact
 
 The quickest way to reach me is email: [jillvekariya.10@gmail.com](mailto:jillvekariya.10@gmail.com). Project walkthroughs, source and recorded results are linked from each repository and from the [portfolio](https://jill-vekariya.github.io/Jill-Vekariya/).
