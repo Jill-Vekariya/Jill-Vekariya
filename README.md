@@ -4,7 +4,7 @@
 
 **Machine Learning Engineer in training · Backend Systems · Third-year Engineering Student**
 
-Rajkot, Gujarat, India
+Ahmedabad, Gujarat, India
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-jill--vekariya.github.io-0f6e6e?style=for-the-badge)](https://jill-vekariya.github.io/Jill-Vekariya/)
 [![Email](https://img.shields.io/badge/Email-jillvekariya.10%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jillvekariya.10@gmail.com)
