@@ -28,7 +28,6 @@ I build machine learning systems end to end: from offline experiments with time-
 | **[Sentinel](https://github.com/Jill-Vekariya/sentinel-fraud-platform)**<br>Fraud detection platform | XGBoost and Isolation Forest scoring with idempotent decisions, a transactional outbox and at-least-once Kafka-compatible streaming. | Holdout PR-AUC 0.764 on 284,807 real anonymised transactions with chronological splits. | [Demo](https://jill-vekariya.github.io/sentinel-fraud-platform/) · [Benchmark](https://github.com/Jill-Vekariya/sentinel-fraud-platform/blob/main/docs/REAL_BENCHMARK.md) |
 | **[SafeHeal AI](https://github.com/Jill-Vekariya/safeheal-ai)**<br>Kubernetes incident response | Incident diagnosis where the model proposes and a separate deterministic controller decides what may change, under RBAC and a durable audit journal. | Controlled study of rule vs. AI vs. native recovery (5/5, 2/5, 0/5); 581 tests with Kubernetes trials in CI. | [Simulation](https://jill-vekariya.github.io/safeheal-ai/) · [Study](https://github.com/Jill-Vekariya/safeheal-ai/blob/main/evidence/public-release/CPU_STUDY.md) |
 
-Also: **[python_lab](https://github.com/Jill-Vekariya/python_lab)**, a growing set of tested Python exercises with cross-platform CI.
 
 ## Tech Stack
 
