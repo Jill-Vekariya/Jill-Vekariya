@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jill Vekariya — ML and backend portfolio</title>
+  <meta name="description" content="Portfolio of Jill Vekariya, a third-year engineering student in Rajkot, India, building machine learning systems and the backend infrastructure that serves them: recommendation, retrieval, fraud scoring and agent evaluation, each with a live demo, CI and recorded experiments.">
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+  <link href="https://api.fontshare.com/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/css?f[]=clash-display@500,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#projects">Skip to projects</a>
+
+  <header class="site-header">
+    <h1>Jill Vekariya</h1>
+    <p class="tagline">Machine learning and backend engineering · third-year student · Rajkot, India</p>
+    <nav class="contact" aria-label="Contact">
+      <a href="https://github.com/Jill-Vekariya">GitHub</a>
+      <a href="mailto:jillvekariya.10@gmail.com">Email</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro" aria-label="Introduction">
+      <p>I build model-based systems and the infrastructure that makes them testable: recommendation, retrieval, fraud scoring and agent evaluation. Every project below has a live browser demo, CI, and recorded experiments, including the ones that went the wrong way. I'm looking for an ML/AI internship.</p>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <ul class="grid">
+        <li class="card">
+          <h3>Atlas</h3>
+          <p class="desc">Cold-start recommender: PyTorch two-tower + FAISS + LightGBM, served with canary routing and rollback.</p>
+          <p class="result"><span class="label">Result</span> The validation-selected model lost to a popularity baseline on the final test (0.234 vs 0.260 NDCG@10), and the case study explains why.</p>
+          <p class="links">
+            <a href="https://jill-vekariya.github.io/atlas-recsys/">Demo</a>
+            <a href="https://github.com/Jill-Vekariya/atlas-recsys">Code</a>
+          </p>
+        </li>
+        <li class="card">
+          <h3>Agent Reliability Harness</h3>
+          <p class="desc">Test bench for a SQL agent: read-only execution, typed grading, strict trace replay, durable FastAPI/PostgreSQL jobs.</p>
+          <p class="result"><span class="label">Result</span> 235 tests and six table fingerprints matched after a crash-recovery restore.</p>
+          <p class="links">
+            <a href="https://jill-vekariya.github.io/agent-reliability-harness/">Demo</a>
+            <a href="https://github.com/Jill-Vekariya/agent-reliability-harness">Code</a>
+          </p>
+        </li>
+        <li class="card">
+          <h3>ReleaseLens</h3>
+          <p class="desc">Documentation retrieval scoped to an exact release and access policy; saved answers keep immutable citations and are flagged for review when sources change.</p>
+          <p class="result"><span class="label">Result</span> 14 snapshots, 534 passages, 70-question study; shows a real citation can still fail to support an answer.</p>
+          <p class="links">
+            <a href="https://jill-vekariya.github.io/ReleaseLens/">Demo</a>
+            <a href="https://github.com/Jill-Vekariya/ReleaseLens">Code</a>
+          </p>
+        </li>
+        <li class="card">
+          <h3>Sentinel</h3>
+          <p class="desc">Fraud scoring (XGBoost + Isolation Forest) with idempotent decisions and a transactional outbox for at-least-once streaming.</p>
+          <p class="result"><span class="label">Result</span> Holdout PR-AUC 0.764 on 284,807 real anonymised transactions with chronological splits.</p>
+          <p class="links">
+            <a href="https://jill-vekariya.github.io/sentinel-fraud-platform/">Demo</a>
+            <a href="https://github.com/Jill-Vekariya/sentinel-fraud-platform">Code</a>
+          </p>
+        </li>
+        <li class="card">
+          <h3>SafeHeal AI</h3>
+          <p class="desc">Kubernetes incident diagnosis where the model proposes and a separate deterministic controller decides what may change.</p>
+          <p class="result"><span class="label">Result</span> In the recorded study a fixed rule recovered 5/5, AI 2/5, native Kubernetes 0/5.</p>
+          <p class="links">
+            <a href="https://jill-vekariya.github.io/safeheal-ai/">Demo</a>
+            <a href="https://github.com/Jill-Vekariya/safeheal-ai">Code</a>
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="tools" aria-labelledby="tools-heading">
+      <h2 id="tools-heading">Tools</h2>
+      <p class="tools">Python, SQL, PyTorch, FAISS, LightGBM, XGBoost, FastAPI, Pydantic, PostgreSQL / pgvector, SQLite, Docker, Kubernetes, Kafka, pytest, GitHub Actions.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <a href="mailto:jillvekariya.10@gmail.com">jillvekariya.10@gmail.com</a>
+    <a href="https://github.com/Jill-Vekariya">github.com/Jill-Vekariya</a>
+    <a href="https://github.com/Jill-Vekariya/Jill-Vekariya">Source for this site</a>
+  </footer>
+</body>
+</html>
