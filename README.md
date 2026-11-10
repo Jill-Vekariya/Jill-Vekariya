@@ -9,7 +9,7 @@
 
 </div>
 
-I build ML systems the way production teams have to: a measured offline experiment first, then a versioned service with tests, Docker, CI and recorded results that someone else can replay. Every repository below has a live demo, a passing pipeline and a document that says what did not work.
+My portfolio focuses on machine learning systems and backend reliability: Kubernetes recovery, SQL-agent evaluation, versioned documentation retrieval, cold-start recommendations and fraud scoring. Explore the browser demos, follow the design decisions into source code, and reproduce the recorded experiments. Each project documents its operating limits and observed failures.
 
 **Open to ML/AI internships for 2027.**
 
@@ -33,9 +33,9 @@ I build ML systems the way production teams have to: a measured offline experime
 | **[Atlas](https://github.com/Jill-Vekariya/atlas-recsys)** | Cold-start recommendations: PyTorch two-tower retriever, FAISS search, LightGBM ranker, FastAPI serving with canary, fallback and rollback. | The validation-selected model lost to the popularity baseline on test (0.234 vs 0.260 NDCG@10); the case study explains why and what changed. | [Live lab](https://jill-vekariya.github.io/atlas-recsys/) · [Case study](https://github.com/Jill-Vekariya/atlas-recsys/blob/main/docs/MODEL_SELECTION_CASE_STUDY.md) |
 | **[Sentinel](https://github.com/Jill-Vekariya/sentinel-fraud-platform)** | Fraud scoring with idempotent decisions, a transactional outbox and at-least-once Kafka-compatible streaming. | Holdout PR-AUC 0.764 on 284,807 real anonymised transactions with chronological splits. | [Demo](https://jill-vekariya.github.io/sentinel-fraud-platform/) · [Benchmark](https://github.com/Jill-Vekariya/sentinel-fraud-platform/blob/main/docs/REAL_BENCHMARK.md) |
 
-## How I work
+## Engineering focus
 
-- Chronological splits and held-out tests before any model claim; negative results are written up, not hidden.
+- Temporal evaluation for recommendation and fraud experiments; explicit dataset-review status for retrieval and agent evaluation.
 - Pinned dependencies, lockfiles, digest-pinned base images and dependency audits in CI.
 - Services ship with health checks, read-only runtime users, resource limits and an audit trail.
 - Python, PyTorch, scikit-learn, XGBoost, LightGBM, FAISS, FastAPI, PostgreSQL, SQLite, Redis, Kafka, Docker, Kubernetes, Prometheus, GitHub Actions.
