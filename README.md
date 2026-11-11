@@ -33,6 +33,10 @@ My portfolio focuses on machine learning systems and backend reliability: Kubern
 | **[Atlas](https://github.com/Jill-Vekariya/atlas-recsys)** | Cold-start recommendations: PyTorch two-tower retriever, FAISS search, LightGBM ranker, FastAPI serving with canary, fallback and rollback. | The validation-selected model lost to the popularity baseline on test (0.234 vs 0.260 NDCG@10); the case study explains why and what changed. | [Live lab](https://jill-vekariya.github.io/atlas-recsys/) · [Case study](https://github.com/Jill-Vekariya/atlas-recsys/blob/main/docs/MODEL_SELECTION_CASE_STUDY.md) |
 | **[Sentinel](https://github.com/Jill-Vekariya/sentinel-fraud-platform)** | Fraud scoring with idempotent decisions, a transactional outbox and at-least-once Kafka-compatible streaming. | Holdout PR-AUC 0.764 on 284,807 real anonymised transactions with chronological splits. | [Demo](https://jill-vekariya.github.io/sentinel-fraud-platform/) · [Benchmark](https://github.com/Jill-Vekariya/sentinel-fraud-platform/blob/main/docs/REAL_BENCHMARK.md) |
 
+## My involvement
+
+I have invested sustained personal effort in this portfolio and reviewed each project repeatedly throughout development. My focus is on understanding the systems, their engineering choices and the limits of the recorded results. Each project README links to my current owner-review statement and the supporting technical documentation.
+
 ## Engineering focus
 
 - Temporal evaluation for recommendation and fraud experiments; explicit dataset-review status for retrieval and agent evaluation.
